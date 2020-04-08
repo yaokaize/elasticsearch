@@ -36,6 +36,11 @@ public class ElasticController {
         return iElasticService.findAll();
     }
 
+    @GetMapping("/delete")
+    public void delete(){
+        iElasticService.deleteIndex("ems");
+    }
+
     @PostMapping("/findByCode")
     public Page<DocBean> findByCode(){
         String code = "xxxxxx";
