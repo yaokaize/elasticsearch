@@ -11,5 +11,5 @@ public interface ElasticRepository extends ElasticsearchRepository<DocBean, Long
 
     Page<DocBean> findByFirstCode(String firstCode, Pageable pageable);
 
-    Page<DocBean> findBySecondCode(String secondCode, Pageable pageables);
+    Page<DocBean> findBySecondCode(String secondCode, Pageable pageable);
 }
